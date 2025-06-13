@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GPSAPP</string>
+    <string name="default_web_client_id">1056070740030-rnvr7sutc19bmej987utjr3m4dnj13ee.apps.googleusercontent.com</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+</resources>
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- DecoratedBarcodeView làm container chính -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- SurfaceView để hiển thị camera preview -->
+        <SurfaceView
+            android:id="@+id/zxing_barcode_surface"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- ViewfinderView để vẽ khung quét -->
+        <com.journeyapps.barcodescanner.ViewfinderView
+            android:id="@+id/zxing_viewfinder_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+    <!-- Overlay để tạo khung quét hình vuông -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <!-- Khung vuông trung tâm -->
+        <View
+            android:id="@+id/scanner_frame"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@drawable/scanner_frame" />
+    </FrameLayout>
+
+    <!-- TextView để hiển thị hướng dẫn -->
+    <TextView
+        android:id="@+id/zxing_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#99000000"
+        android:padding="8dp"
+        android:text="Quét mã QR trong khung"
+        android:textColor="@android:color/white" />
+
+</FrameLayout>

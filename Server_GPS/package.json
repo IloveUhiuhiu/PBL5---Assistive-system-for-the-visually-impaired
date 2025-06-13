@@ -1,0 +1,28 @@
+{
+  "name": "server-smart-stick",
+  "version": "1.0.0",
+  "description": "Server for smart stick detect obstacles for the blind",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnhatthanh/server-smart-stick.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "pnhatthanh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pnhatthanh/server-smart-stick/issues"
+  },
+  "homepage": "https://github.com/pnhatthanh/server-smart-stick#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.1.0"
+  }
+}

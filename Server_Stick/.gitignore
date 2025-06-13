@@ -1,0 +1,11 @@
+# Python bytecode
+__pycache__/
+
+# Environment
+.venv/
+
+# IDEs
+.idea/
+
+static/images
+static/labels
